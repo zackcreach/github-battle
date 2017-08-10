@@ -56,7 +56,9 @@ const sortPlayers = players => {
 
 module.exports = {
   battle: players => {
-
+    return axios.all(players.map(getUserData))
+      .then(sortPlayers)
+      .catch(handleError)
   },
   fetchPopularRepos: language => {
     const encodedURI = window.encodeURI('https://api.github.com/search/repositories?q=stars:>1+language:'

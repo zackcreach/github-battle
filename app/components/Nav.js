@@ -1,8 +1,8 @@
-var React = require('react');
-var ReactRouter = require('react-router-dom');
-var NavLink = ReactRouter.NavLink;
+const React = require('react');
+const ReactRouter = require('react-router-dom');
+const NavLink = ReactRouter.NavLink;
 
-function Nav() {
+const Nav = () => {
   return (
     <ul className='nav'>
       <li>

@@ -1,9 +1,9 @@
-var React = require('react');
-var PropTypes = require('prop-types');
-var api = require('../utils/api');
+const React = require('react');
+const PropTypes = require('prop-types');
+const api = require('../utils/api');
 
 const SelectLanguage = props => {
-  var languages = ['All', 'Javascript', 'Java', 'Ruby', 'Python', 'CSS'];
+  const languages = ['All', 'Javascript', 'Java', 'Ruby', 'Python', 'CSS'];
   return (
     <ul className='languages'>
       {languages.map((language, index) => {

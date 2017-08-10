@@ -1,6 +1,6 @@
-var React = require('react');
-var ReactRouter = require('react-router-dom');
-var Link = ReactRouter.Link;
+const React = require('react');
+const ReactRouter = require('react-router-dom');
+const Link = ReactRouter.Link;
 
 class Home extends React.Component {
   render() {
